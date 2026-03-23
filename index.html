@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetos da Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Cidadania Online</h1>
+    </div>
+    <p>É fundamental compreender que a cidadania online é um conceito que abrange os direitos e deveres dos indivíduos no ambiente digital, promovendo o uso ético, seguro e responsável da internet para garantir uma convivência digital harmoniosa e produtiva.</p>
+
+    <p>E falaremos dessas 3 temáticas:</p>
+
+    <ol>
+        <li>Importância da cidadania online</li>
+        <li>Responsabilidades dos usuários</li>
+        <li>Proteção de dados pessoais</li>
+    </ol>
+    <u><p>1. Importância da cidadania online: A cidadania online é essencial para garantir um ambiente digital seguro, ético e inclusivo para todos os usuários. Ela promove o respeito à privacidade, combate à desinformação e incentiva a participação ativa na construção de uma internet mais humana e democrática.</p></u>
+
+   <u><p>2. Responsabilidades dos usuários: Os usuários têm a responsabilidade de utilizar a internet de forma ética, segura e responsável, respeitando os direitos e deveres dos outros usuários e contribuindo para a construção de um ambiente digital positivo.</p></u>
+
+    <u><p>3. Proteção de dados pessoais: A proteção de dados pessoais é um aspecto crucial da cidadania online, pois envolve a segurança e privacidade dos usuários no ambiente digital. É importante que os usuários estejam cientes dos riscos e adotem medidas para proteger suas informações pessoais.</p></u>
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Cidadania Online" class="logo">
+    </div>
+    
+    <p>A iniciativa Arquitetos da Web surge para transformar usuários passivos em construtores ativos de uma internet mais segura e humana.
+O projeto fundamenta-se na ideia de que a rede mundial de computadores é um espaço público que exige planejamento, ética e proteção constante.
+Através da educação digital, busca-se erguer defesas sólidas contra o cibercrime e a desinformação, garantindo a integridade dos dados e da privacidade.
+Promovemos o exercício da cidadania online como o alicerce necessário para interações baseadas no respeito mútuo e na empatia coletiva.
+Ser um arquiteto da web é projetar hoje a infraestrutura social e tecnológica de um futuro digital sustentável, inclusivo e democrático.</p>
+
+   <p>Falaremos também sobre a importância da cidadania online.</p>
+
+     <p>A cidadania online, ou digital, define o conjunto de direitos e deveres de um indivíduo no ambiente virtual.
+Envolve o uso ético, seguro e responsável das tecnologias para promover uma convivência digital harmoniosa e produtiva.
+Pressupõe o respeito à privacidade alheia, o combate à desinformação e a proteção de dados pessoais sensíveis.
+Ser um cidadão digital consciente significa exercer criticidade sobre conteúdos e interagir com empatia nas redes.
+É o pilar fundamental para garantir que a internet seja um espaço de inclusão, segurança e democracia.</p>
+    <div>
+       <h2>Esse assunto é de extrema importância, pois a cidadania online é essencial para garantir um ambiente digital seguro, ético e inclusivo para todos os usuários.</h2>
+    </div>
+
+<div class="checklist-container">
+    <h3>Checklist do Alicerce: Navegação Segura</h3>
+    
+    <label class="item">
+        <input type="checkbox"> Ativar autenticação em dois fatores (2FA)
+    </label>
+    
+    <label class="item">
+        <input type="checkbox"> Revisar permissões de privacidade nas redes
+    </label>
+    
+    <label class="item">
+        <input type="checkbox"> Verificar se o site usa "HTTPS" (Cadeado)
+    </label>
+    
+    <label class="item">
+        <input type="checkbox"> Atualizar senhas para combinações fortes
+    </label>
+    
+    <label class="item">
+        <input type="checkbox"> Limpar extensões desconhecidas do navegador
+    </label>
+</div>
+
+<section id="consultoria">
+    <h2>📋 Registro de Consultoria de Privacidade</h2>
+    <p>Preencha os dados para gerar o relatório de segurança do usuário.</p>
+    
+    <form id="form-consultoria">
+        <input type="text" placeholder="Nome do Usuário" required>
+        
+        <div class="servicos">
+            <label><input type="checkbox"> Configuração de Autenticação (2FA)</label>
+            <label><input type="checkbox"> Limpeza de Permissões de Apps</label>
+            <label><input type="checkbox"> Ajuste de Visibilidade de Perfil</label>
+            <label><input type="checkbox"> Verificação de Senhas Vazadas</label>
+        </div>
+
+        <button type="submit">Gerar Certificado de Privacidade</button>
+    </form>
+</section>
+ <script>
+    document.getElementById('form-consultoria').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Certificado de privacidade gerado com sucesso!');
+    });
+ </script>
+
+<div id="relatorio-final" style="display: none; border: 2px dashed #27ae60; padding: 20px; margin-top: 20px; background: white;">
+    <h2>🏗️ Relatório de Alvenaria Digital</h2>
+    <p><strong>Usuário:</strong> <span id="resumo-nome"></span></p>
+    <p><strong>Status da Obra:</strong> Estrutura Reforçada ✅</p>
+    <ul id="lista-concluidos"></ul>
+    <p><em>"Sua arquitetura digital agora possui bases sólidas contra invasões e vazamentos."</em></p>
+    <button onclick="window.print()">Imprimir ou Salvar PDF</button>
+</div>
+
+<script>
+    document.getElementById('form-consultoria').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nome = document.querySelector('#form-consultoria input[type="text"]').value;
+        document.getElementById('resumo-nome').textContent = nome;
+        document.getElementById('relatorio-final').style.display = 'block';
+    });
+    document.getElementById('form-consultoria').onsubmit = function(e) {
+    e.preventDefault();
+    
+    // Captura os dados
+    const nome = document.querySelector('input[type="text"]').value;
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    const lista = document.getElementById('lista-concluidos');
+    
+    // Preenche o relatório
+    document.getElementById('resumo-nome').innerText = nome;
+    lista.innerHTML = ""; // Limpa a lista anterior
+    
+    checkboxes.forEach(item => {
+        let li = document.createElement('li');
+        li.innerText = "🛠️ " + item.parentElement.innerText;
+        lista.appendChild(li);
+    });
+
+    // Mostra o relatório e esconde o formulário
+    document.getElementById('relatorio-final').style.display = 'block';
+    this.style.display = 'none';
+};
+</script>
+
+<div id="agradecimento" style="background-color: #e8f5e9; padding: 15px; border-radius: 8px; margin-top: 15px;">
+    <h4>Obrigado por construir conosco! 🏗️</h4>
+    <p>Parabéns por dar esse passo fundamental na sua segurança digital.</p>
+    <p>Ao fortalecer sua privacidade, você não apenas protege a si mesmo, mas contribui para uma rede mais sólida e confiável para todos.</p>
+    <p><strong>Lembre-se:</strong> a manutenção da sua "obra digital" deve ser constante. Revise suas senhas e permissões periodicamente!</p>
+</div>
+
+<div id="relatorio-final" style="display: none; border: 2px dashed #27ae60; padding: 20px; margin-top: 20px; background: white; text-align: center;">
+    
+    <img src="selo-obra.png" alt="Selo de Obra Concluída" style="max-width: 150px; margin-bottom: 20px;">
+    
+    <h2>🏗️ Relatório de Alvenaria Digital</h2>
+    <p><strong>Usuário:</strong> <span id="resumo-nome"></span></p>
+    <p><strong>Status da Obra:</strong> Estrutura Reforçada ✅</p>
+    <ul id="lista-concluidos" style="text-align: left; display: inline-block;"></ul>
+    
+    <div id="agradecimento" ... > ... </div>
+    <button onclick="window.print()">Imprimir ou Salvar PDF</button>
+</div>
+
+<h1>Segurança Digital</h1>
+
+<p>É necessário falar sobre segurança digital, pois a proteção de dados pessoais é um aspecto crucial da cidadania online, envolvendo a segurança e privacidade dos usuários no ambiente digital. É importante que os usuários estejam cientes dos riscos e adotem medidas para proteger suas informações pessoais.</p>
+
+ <p>Falaremos sobre a importância de manter sua segurança digital sempre atualizada.</p>
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Segurança Digital" class="logo">
+    <li>Use senhas fortes e únicas para cada conta.</li>
+    <li>Ative a autenticação de dois fatores sempre que possível.</li>
+    <li>Atualize seu software e aplicativos regularmente.</li>
+    <li>Esteja ciente de golpes e tentativas de phishing.</li>
+</ol>
+
+<p>Essas práticas ajudam a criar uma base sólida para sua segurança digital.</p>
+
+<p>Também é importante manter-se informado sobre as latest ameaças e vulnerabilidades de segurança.</p>
+
+<u><p>1. A importância de usar senhas fortes e únicas não pode ser subestimada.Pois elas são a primeira linha de defesa contra acessos não autorizados.</p></u>
+
+<u><p>2. Ativar a Autenticação de Dois Fatores (2FA) é, sem dúvida, o passo mais simples e eficaz para proteger sua vida digital hoje em dia. É como colocar uma fechadura extra na porta de casa: mesmo que alguém consiga a sua chave (senha), ainda precisará de um código único para entrar.
+
+Aqui está um resumo do porquê e como usar:
+
+O que é o 2FA?
+A autenticação de dois fatores exige duas formas de identificação para acessar uma conta. Geralmente, combina-se:
+
+Algo que você sabe: Sua senha.
+
+Algo que você possui: Seu celular, um aplicativo de autenticação ou um token físico.
+
+
+Getty Images
+Por que usar?
+Bloqueia invasões: Mesmo que sua senha seja vazada em um ataque a grandes sites, o invasor não terá o código do seu celular.
+
+Alertas em tempo real: Se você receber um código sem ter tentado fazer login, saberá imediatamente que sua conta está sob ataque e poderá trocar sua senha.
+
+Segurança para o "fator humano": Protege contra ataques de phishing (sites falsos que tentam roubar seus dados).
+
+Melhores Práticas
+Evite o SMS: Prefira aplicativos como Google Authenticator, Microsoft Authenticator ou Authy. O SMS é vulnerável a uma técnica chamada SIM Swap (clonagem de chip).
+
+Salve os Códigos de Backup: Sempre que ativar o 2FA, o site fornecerá códigos de recuperação. Guarde-os em um local seguro (fora do computador/celular) para não perder o acesso se perder o aparelho.
+
+Priorize contas críticas: Comece pelo seu e-mail principal, redes sociais e aplicativos de banco.
+
+Dica de ouro: No WhatsApp, ative a "Confirmação em duas etapas" nas configurações de conta para evitar que seu número seja clonado.</p></u>
+
+<u><p>3. Manter o software e os aplicativos devidamente atualizados é uma medida fundamental de segurança.
+As atualizações corrigem vulnerabilidades críticas que poderiam ser exploradas por agentes mal-intencionados para invasões.
+Além da proteção, esses pacotes de dados otimizam o desempenho e garantem estabilidade operacional ao sistema.
+Novos recursos e funcionalidades são frequentemente introduzidos, melhorando a experiência e a produtividade do usuário.
+Recomenda-se, portanto, a ativação de atualizações automáticas para assegurar a integridade e eficiência do ambiente digital</p></u>
+
+<u><p>4. Criminosos digitais utilizam mensagens falsas para induzir o usuário ao erro e roubar dados sensíveis.
+Verifique sempre o remetente e evite clicar em links suspeitos que prometem ganhos ou urgência.
+Instituições financeiras e plataformas oficiais raramente solicitam senhas ou códigos por canais informais.
+A atenção aos detalhes, como erros de ortografia e URLs estranhas, previne a maioria das invasões.
+Manter uma postura vigilante é a barreira mais eficaz contra táticas de engenharia social e golpes.</p></u>
+
+<div>
+<p>Esse assunto é muito importante para a segurança digital e também para a proteção de nossos dados pessoais.</p>
+</div>
+
+<style>
+        body { font-family: sans-serif; background: #ffffff; color: #000000; padding: 20px; }
+        .item { background: #ffffff; margin: 10px 0; padding: 15px; border-radius: 8px; display: flex; align-items: center; }
+        a { color: #4fc3f7; text-decoration: none; font-weight: bold; margin-left: 10px; }
+        input[type="checkbox"] { transform: scale(1.5); cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>🛡️ Minha Segurança Digital</h2>
+    
+    <div class="item">
+        <input type="checkbox"> <a href="https://myaccount.google.com/signinoptions/two-step-verification" target="_blank">Ativar 2FA (Google)</a>
+    </div>
+
+    <div class="item">
+        <input type="checkbox"> <a href="https://getbootstrap.com" target="_blank">Atualizar Apps e BIOS</a>
+    </div>
+
+    <div class="item">
+        <input type="checkbox"> <a href="https://www.virustotal.com" target="_blank">Checar Links Suspeitos (Phishing)</a>
+    </div>
+
+    <div class="item">
+        <input type="checkbox"> <a href="https://bitwarden.com" target="_blank">Configurar Gerenciador de Senhas</a>
+    </div>
+
+<div class="container">
+        <h2>🛡️ Checkpoint de Segurança</h2>
+        
+        <div class="item"><input type="checkbox" id="c1"> <a href="https://myaccount.google.com/signinoptions/two-step-verification" target="_blank">Ativar 2FA</a></div>
+        <div class="item"><input type="checkbox" id="c2"> <a href="https://support.microsoft.com/pt-br/windows/windows-update-perguntas-frequentes" target="_blank">Atualizar Sistema</a></div>
+        <div class="item"><input type="checkbox" id="c3"> <a href="https://www.virustotal.com" target="_blank">Verificar Phishing</a></div>
+        <div class="item"><input type="checkbox" id="c4"> <a href="https://bitwarden.com" target="_blank">Gerenciador de Senhas</a></div>
+
+        <button onclick="salvarProgresso()">Salvar Status</button>
+    </div>
+
+    <script>
+        function salvarProgresso() {
+            const checks = document.querySelectorAll('input[type="checkbox"]');
+            checks.forEach((check, index) => {
+                localStorage.setItem('seguranca-' + index, check.checked);
+            });
+            alert("Progresso salvo com sucesso!");
+        }
+
+        window.onload = function() {
+            const checks = document.querySelectorAll('input[type="checkbox"]');
+            checks.forEach((check, index) => {
+                const salvo = localStorage.getItem('seguranca-' + index);
+                if (salvo === 'true') check.checked = true;
+            });
+        };
+    </script>
+
+<script>
+    const checks = document.querySelectorAll('.step');
+    const bar = document.getElementById('progressBar');
+    const statusText = document.getElementById('status-text');
+
+    function atualizarBarra() {
+        const marcados = Array.from(checks).filter(c => c.checked).length;
+        const porcentagem = (marcados / checks.length) * 100;
+        bar.style.width = porcentagem + "%";
+        statusText.innerText = `Progresso: ${Math.round(porcentagem)}%`;
+        
+        // Mudar cor da barra conforme o sucesso
+        bar.style.background = porcentagem === 100 ? "#4caf50" : (porcentagem > 50 ? "#ffeb3b" : "#f44336");
+    }
+
+    // Escuta cliques nos checkboxes
+    checks.forEach(check => check.addEventListener('change', atualizarBarra));
+
+    function salvar() {
+        const dados = Array.from(checks).map(c => c.checked);
+        localStorage.setItem('progressoSeguranca', JSON.stringify(dados));
+        alert("Configurações de segurança salvas!");
+    }
+
+    // Carregar ao abrir
+    window.onload = () => {
+        const salvo = JSON.parse(localStorage.getItem('progressoSeguranca'));
+        if (salvo) {
+            checks.forEach((c, i) => c.checked = salvo[i]);
+            atualizarBarra();
+        }
+    };
+</script>
+
+    <style>
+        /* Estilos para a área de votação */
+        .vote-section { background: #1e1e1e; padding: 20px; border-radius: 12px; width: 420px; margin: 20px auto; border: 1px solid #333; text-align: center; font-family: sans-serif; }
+        .vote-container { display: flex; justify-content: center; gap: 20px; margin-top: 15px; }
+        .vote-btn { background: #333; border: none; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.3s; font-weight: bold; }
+        
+        /* Cores de destaque */
+        .vote-btn.like:hover, .active-like { background: #00ff88; color: #000; }
+        .vote-btn.dislike:hover, .active-dislike { background: #ff4444; color: #fff; }
+        
+        .vote-bar-bg { background: #444; height: 8px; border-radius: 4px; margin-top: 20px; overflow: hidden; display: flex; }
+        #like-bar { background: #00ff88; height: 100%; width: 50%; transition: width 0.5s ease; }
+        #percent-display { font-size: 0.8rem; color: #aaa; margin-top: 8px; }
+    </style>
+    <div class="vote-section">
+    <h3 style="color: #fff; margin: 0;">O que achou deste painel?</h3>
+    
+    <div class="vote-container">
+        <button class="vote-btn like" onclick="votar('like')" id="btn-like">👍 <span id="count-like">0</span></button>
+        <button class="vote-btn dislike" onclick="votar('dislike')" id="btn-dislike">👎 <span id="count-dislike">0</span></button>
+    </div>
+
+    <div class="vote-bar-bg">
+        <div id="like-bar"></div>
+    </div>
+    <div id="percent-display">Aprovação: 50%</div>
+</div>
+
+<script>
+    let votos = JSON.parse(localStorage.getItem('votos_seguranca')) || { likes: 0, dislikes: 0, usuarioVotou: null };
+
+    function atualizarInterface() {
+        document.getElementById('count-like').innerText = votos.likes;
+        document.getElementById('count-dislike').innerText = votos.dislikes;
+
+        const total = votos.likes + votos.dislikes;
+        const porcetagem = total === 0 ? 50 : (votos.likes / total) * 100;
+        
+        document.getElementById('like-bar').style.width = porcetagem + "%";
+        document.getElementById('percent-display').innerText = `Aprovação: ${Math.round(porcetagem)}%`;
+
+        // Destacar o botão que o usuário clicou
+        document.getElementById('btn-like').className = votos.usuarioVotou === 'like' ? 'vote-btn active-like' : 'vote-btn like';
+        document.getElementById('btn-dislike').className = votos.usuarioVotou === 'dislike' ? 'vote-btn active-dislike' : 'vote-btn dislike';
+    }
+
+    function votar(tipo) {
+        if (votos.usuarioVotou === tipo) {
+            // Se clicar de novo no mesmo, remove o voto
+            votos[tipo === 'like' ? 'likes' : 'dislikes']--;
+            votos.usuarioVotou = null;
+        } else {
+            // Se já tinha votado no outro, remove o anterior
+            if (votos.usuarioVotou) {
+                votos[votos.usuarioVotou === 'like' ? 'likes' : 'dislikes']--;
+            }
+            // Adiciona o novo voto
+            votos[tipo === 'like' ? 'likes' : 'dislikes']++;
+            votos.usuarioVotou = tipo;
+        }
+
+        localStorage.setItem('votos_seguranca', JSON.stringify(votos));
+        atualizarInterface();
+    }
+
+    // Inicializa a tela
+    atualizarInterface();
+</script>  
+<div class="div-1">
+<p>Equipe: Arquitetos da Web. Colaboradores: Kauan Sousa, João, Miguel Moreira, Daniel Torres e Salomão</p>
+</div>
+
+</body>
+</html>
